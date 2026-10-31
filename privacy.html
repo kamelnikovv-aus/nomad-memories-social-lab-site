@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy for Nomad Memories Social Lab, including OAuth token storage, data retention, access revocation, and deletion.">
+  <meta name="color-scheme" content="dark">
+  <title>Privacy Policy — Nomad Memories Social Lab</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Nomad Memories Social Lab home"><span class="brand-mark" aria-hidden="true">NM<span class="mark-dot">.</span></span><span class="brand-name">Nomad Memories<span>Social Lab</span></span></a>
+      <nav class="site-nav" aria-label="Main navigation"><a href="index.html">Overview</a><a href="terms.html">Terms</a><a href="privacy.html" aria-current="page">Privacy</a></nav>
+    </header>
+
+    <main class="document-layout">
+      <aside class="document-aside"><a class="back-link" href="index.html">← Back to overview</a><p class="aside-label">LEGAL / 02</p><p>Your account data stays in the local analytics workspace.</p></aside>
+      <article class="legal-document">
+        <p class="eyebrow">Nomad Memories Social Lab</p>
+        <h1>Privacy Policy<span class="heading-period">.</span></h1>
+        <p class="document-date">Last updated: 31 October 2026</p>
+        <p class="lead">This policy explains how Nomad Memories Social Lab handles information obtained through authorized, read-only YouTube, Instagram, and TikTok API access.</p>
+
+        <section><h2>1. Data we receive</h2><p>Depending on the platform and permissions granted, the app may receive account identifiers and display names; optional account statistics such as follower counts; public video identifiers, titles, descriptions or captions, hashtags, publication times, durations, and links; and available performance counts such as views, likes, comments, and shares.</p><p>The app also receives OAuth access and refresh tokens needed to maintain authorized API access. It does not ask for your social media password. Metrics that an API does not provide are recorded as unavailable, not as zero.</p></section>
+        <section><h2>2. How we use the data</h2><p>Data is used to build local reports, compare videos within their platform and observation windows, and track changes through new timestamped snapshots. The integration is read-only: it does not use these permissions to publish, modify, or delete content or manage comments.</p></section>
+        <section><h2>3. Where data is stored</h2><p>Video records, account metadata, and metric snapshots are kept in a local SQLite database on the app operator’s device. OAuth tokens are stored locally in separate, Git-ignored files and are not placed in the public website, source repository, or SQLite database. TikTok and Instagram token storage uses Windows DPAPI for the current user; other platform token files remain local and outside the public repository.</p><p>This website is a static information site hosted by GitHub Pages. It has no sign-in form, tracking script, or analytics cookie. GitHub may process technical visit information under its own policies when serving the pages.</p></section>
+        <section><h2>4. Protection and sharing</h2><p>Local access controls, separate token files, and DPAPI where implemented help protect credentials. API requests are sent to the relevant platform using its official endpoints. The app does not sell account data or publish local analytics records through this website.</p></section>
+        <section><h2>5. Retention, revocation, and deletion</h2><p>Local video records and snapshots remain until the app operator deletes them; earlier observations are not automatically removed when a new snapshot is saved. You can revoke OAuth access in the connected-app settings of TikTok, Google/YouTube, or Meta/Instagram. Revocation prevents future authorized collection, but existing local records remain until deleted.</p><p>To request deletion of locally stored account data or tokens, contact the app operator using the email below. The operator can remove the local token file and the relevant local records and backups. This static website cannot process deletion requests automatically.</p></section>
+        <section><h2>6. Contact and updates</h2><p>Questions about data handling, access, or deletion can be sent to the app operator. This policy will be updated here if data practices change.</p><p class="contact-address"><strong>Contact email:</strong> <a href="mailto:prger.k@gmail.com">prger.k@gmail.com</a></p></section>
+
+        <div class="document-end"><a href="terms.html">Read the Terms of Service <span aria-hidden="true">→</span></a></div>
+      </article>
+    </main>
+
+    <footer class="site-footer"><span>© 2026 Nomad Memories Social Lab</span><div><a href="index.html">Overview</a><a href="terms.html">Terms of Service</a></div></footer>
+  </div>
+</body>
+</html>
